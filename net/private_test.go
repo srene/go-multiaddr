@@ -3,7 +3,7 @@ package manet
 import (
 	"testing"
 
-	ma "github.com/multiformats/go-multiaddr"
+	ma "github.com/srene/go-multiaddr"
 )
 
 func TestIsPublicAddr(t *testing.T) {

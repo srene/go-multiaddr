@@ -1,4 +1,4 @@
-module github.com/multiformats/go-multiaddr
+module github.com/srene/go-multiaddr
 
 go 1.18
 

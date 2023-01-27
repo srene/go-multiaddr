@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"strings"
 
-	ma "github.com/multiformats/go-multiaddr"
+	ma "github.com/srene/go-multiaddr"
 )
 
 var errIncorrectNetAddr = fmt.Errorf("incorrect network addr conversion")

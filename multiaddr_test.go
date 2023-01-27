@@ -190,6 +190,7 @@ func TestConstructSucceeds(t *testing.T) {
 		"/ip4/127.0.0.1/tcp/127/noise",
 		"/ip4/127.0.0.1/tcp/127/wss",
 		"/ip4/127.0.0.1/tcp/127/wss",
+		"/hicn/2601:9:4f81:9700:803e:ca65:66e8:c21",
 		"/ip4/127.0.0.1/tcp/127/webrtc-direct",
 		"/ip4/127.0.0.1/tcp/127/webrtc",
 	}

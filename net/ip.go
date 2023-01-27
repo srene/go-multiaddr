@@ -3,7 +3,7 @@ package manet
 import (
 	"net"
 
-	ma "github.com/multiformats/go-multiaddr"
+	ma "github.com/srene/go-multiaddr"
 )
 
 // Loopback Addresses

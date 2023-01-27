@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	maddr "github.com/multiformats/go-multiaddr"
+	maddr "github.com/srene/go-multiaddr"
 )
 
 var (
