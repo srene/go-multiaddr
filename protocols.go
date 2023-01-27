@@ -275,9 +275,11 @@ var (
 		VCode: CodeToVarint(P_WEBRTC),
 	}
 	protoHicn = Protocol{
-		Name:  "hicn",
-		Code:  P_HICN,
-		VCode: CodeToVarint(P_HICN),
+		Name:       "hicn",
+		Code:       P_HICN,
+		VCode:      CodeToVarint(P_HICN),
+		Size:       128,
+		Transcoder: TranscoderIP6,
 	}
 )
 

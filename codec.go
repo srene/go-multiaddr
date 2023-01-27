@@ -12,8 +12,11 @@ func stringToBytes(s string) ([]byte, error) {
 	// consume trailing slashes
 	s = strings.TrimRight(s, "/")
 
+	fmt.Println("String to bytes ", s)
 	var b bytes.Buffer
 	sp := strings.Split(s, "/")
+
+	fmt.Println("String to bytes ", sp)
 
 	if sp[0] != "" {
 		return nil, fmt.Errorf("failed to parse multiaddr %q: must begin with /", s)
@@ -29,6 +32,8 @@ func stringToBytes(s string) ([]byte, error) {
 	for len(sp) > 0 {
 		name := sp[0]
 		p := ProtocolWithName(name)
+
+		fmt.Println("ProtocolWithName ", name)
 		if p.Code == 0 {
 			return nil, fmt.Errorf("failed to parse multiaddr %q: unknown protocol %s", s, sp[0])
 		}
