@@ -40,6 +40,7 @@ const (
 	P_PLAINTEXTV2       = 7367777
 	P_WEBRTC_DIRECT     = 280
 	P_WEBRTC            = 281
+	P_HICN              = 456
 )
 
 var (
@@ -273,6 +274,11 @@ var (
 		Code:  P_WEBRTC,
 		VCode: CodeToVarint(P_WEBRTC),
 	}
+	protoHicn = Protocol{
+		Name:  "hicn",
+		Code:  P_HICN,
+		VCode: CodeToVarint(P_HICN),
+	}
 )
 
 func init() {
@@ -313,6 +319,7 @@ func init() {
 		protoPlaintextV2,
 		protoWebRTCDirect,
 		protoWebRTC,
+		protoHicn,
 	} {
 		if err := AddProtocol(p); err != nil {
 			panic(err)
